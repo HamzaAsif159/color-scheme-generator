@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Scheme Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header flex">
+                <input type="color"  value="#F55A5A" id="seed-color"">
+                <select name="colors" id="mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                  <button id="get-scheme">Get Color Scheme</button>
+            </div>
+            <div class="color-palletes">
+                <div id="pallete-1"  class="pallete"></div>
+                <div id="pallete-2" class="pallete"></div>
+                <div id="pallete-3" class="pallete"></div>
+                <div id="pallete-4" class="pallete"></div>
+                <div id="pallete-5" class="pallete"></div>
+            </div>
+            <div class="color-codes flex">
+                <div id="code-1"></div>
+                <div id="code-2"></div>
+                <div id="code-3"></div>
+                <div id="code-4"></div>
+                <div id="code-5"></div>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
